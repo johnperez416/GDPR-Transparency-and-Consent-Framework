@@ -99,7 +99,7 @@
     "preact-render-to-string": "^3.6.0",
     "promise-polyfill": "^7.1.0",
     "proptypes": "^1.0.0",
-    "query-string": "^5.0.1",
+    "query-string": "^7.0.0",
     "react-codemirror2": "^4.0.0",
     "react-router-dom": "^4.2.2",
     "serve": "^7.1.3",
