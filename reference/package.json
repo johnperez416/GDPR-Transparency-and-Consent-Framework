@@ -91,7 +91,7 @@
   "dependencies": {
     "classnames": "^2.2.5",
     "codemirror": "^5.34.0",
-    "core-js": "^2.5.3",
+    "core-js": "^3.13.1",
     "js-beautify": "^1.7.5",
     "lodash": "^4.17.4",
     "preact": "^8.1.0",
