@@ -101,7 +101,7 @@
     "proptypes": "^1.0.0",
     "query-string": "^5.0.1",
     "react-codemirror2": "^4.0.0",
-    "react-router-dom": "^4.2.2",
+    "react-router-dom": "^5.2.0",
     "serve": "^9.2.0",
     "whatwg-fetch": "^2.0.3"
   }
