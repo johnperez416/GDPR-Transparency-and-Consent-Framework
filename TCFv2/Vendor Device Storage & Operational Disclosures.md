@@ -149,8 +149,6 @@ Below is sample JSON for a fictional TCF Vendor named _AdTech123_. _AdTech123_ o
     {
       "identifier": "optOut",
       "type": "cookie",
-      ...
-      "purposes": [1,3,4,5,6,9,10],
       "description": "Opt out of any tracking",
       "optOut": true
     }
