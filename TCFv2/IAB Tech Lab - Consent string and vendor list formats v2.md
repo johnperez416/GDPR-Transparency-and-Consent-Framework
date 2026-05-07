@@ -66,6 +66,7 @@
 
 | Date | Version | Comments |
 | :-- | :-- | :-- |
+| May 2026 | 2.4 | Based on new policy updates: updated GVL JSON spec to include new StandardTexts field.
 | Apr 2025 | 2.3 | Resolve the LI ambiguity by repurposing and making the ‘Disclosed Vendors’ section a mandatory section of the TC string.
 | Feb 2024 | 2.2 | Deprecated the gdpr_pd macro, and added the field 'environments' to the CMP JSON. |
 | May 2023 | 2.2 | Update to further strengthen the TCF as a standard in the industry: revised purpose names and descriptions, introduced retention periods for all purposes, removed legitimate interest for purposes 3 to 6, the introduction of data categories used in conjunction with the purposes, support for legitimate interest claim urls, adding support for localized policy urls and introducing a more robust vendor compliance program. |
@@ -1309,6 +1310,7 @@ The registration process is described here: [https://iabeurope.eu/tcf](https://i
 *   A list of Special Purposes
 *   A list of standard Features
 *   A list of Special Features
+*   A list of Standard Texts
 *   A list of Stacks
 *   A list of Categories of data collected
 *   A list of Vendors and their:
@@ -1543,6 +1545,10 @@ Here is an annotated example of the GVL’s JSON format and content. Some attrib
 
   },
 
+  "standardTexts": {
+    "features": “These means of processing can be used solely in pursuit of one or several purposes for which you are given a choice in this notice.”
+  },
+  
   "stacks": {
 	"1": {
   	   "id": 1,
