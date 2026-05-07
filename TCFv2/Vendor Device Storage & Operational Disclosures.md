@@ -100,6 +100,8 @@ A wildcard alone is permitted only in cases where the number of domains is large
 To indicate that use of the storage <span style="text-decoration:underline;">is</span> subject to the consent requirement of the ePrivacy Directive, include Purpose ID 1 from the GVL.
 <p>
 To indicate that the use of storage is <span style="text-decoration:underline;">exempted from</span> (and therefore <span style="text-decoration:underline;">not</span> subject to) the consent requirement of the ePrivacy Directive, do not include Purpose ID 1 from the GVL.
+<p>
+To indicate that the storage is associated with a non-TCF cookie, leave the array empty.
 </td>
 </tr>
 <tr>
@@ -112,7 +114,7 @@ To indicate that the use of storage is <span style="text-decoration:underline;">
     <td><code>description</code></td>
     <td>optional</td>
     <td>string</td>
-    <td>A brief description of this item's use.</td>
+    <td>A brief description of this item's use. In case of Non-TCF cookie, a description is required.</td>
   </tr>
   <tr>
     <td><code>optOut</code></td>
