@@ -186,6 +186,11 @@ Vendors MUST publish the domains they use to collect and process personal data i
 
 <table>
   <tr><td>Field</td><td>Scope</td><td>Type</td><td>Description</td></tr>
+  <tr><td><code>domains</code></td><td>required</td><td>string</td>
+  <td>Vendors operating in web environment must declare the domains used.
+  <br>If no domains are used, an empty array must be included.
+  <br>If the vendor does not operate in web environment, the domains array may be omitted.
+  </td></tr>
   <tr><td><code>domain</code></td><td>required</td><td>string</td><td>“*.vendor.com” means multiple subdomains may exist.
 <br><br>
 Entry MUST NOT contain “http(s)://” or text other than the domain.
@@ -231,8 +236,11 @@ Vendors that support mobile in-app environments but do not use any SDKs MUST inc
 
 <table>
   <tr><td>Field</td><td>Scope</td><td>Type</td><td>Description</td></tr>
-  <tr><td><code>name</code></td><td>required</td><td>string</td><td>The API package name as registered with the corresponding mobile app store.</td>
+  <tr><td><code>sdks</code></td><td>required</td><td>array</td><td>Vendors operating in mobile in-app environments must declare the SDKs used.
+<br>If no SDKs are used, an empty array must be included.
+<br>If the vendor does not operate in mobile in-app environments, the SDKs array may be omitted.
 </td></tr>
+  <tr><td><code>name</code></td><td>required</td><td>string</td><td>The API package name as registered with the corresponding mobile app store.</td></tr>
   <tr><td><code>use</code></td><td>optional</td><td>string</td><td>Textual explanation of what the SDK is used for.
 <br><br>
 There is no mechanism for requesting alternate translations. For widest readability, it is suggested that Vendors use English for the optional explanatory text. </td></tr>
