@@ -186,7 +186,7 @@ Vendors MUST publish the domains they use to collect and process personal data i
 
 <table>
   <tr><td>Field</td><td>Scope</td><td>Type</td><td>Description</td></tr>
-  <tr><td><code>domains</code></td><td>required</td><td>string</td>
+  <tr><td><code>domains</code></td><td>required</td><td>array</td>
   <td>Vendors operating in web environment must declare the domains used.
   <br>If no domains are used, an empty array must be included.
   <br>If the vendor does not operate in web environment, the domains array may be omitted.
