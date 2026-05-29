@@ -151,10 +151,6 @@ Below is sample JSON for a fictional TCF Vendor named _AdTech123_. _AdTech123_ o
     {
       "identifier": "optOut",
       "type": "cookie",
-<<<<<<< issue-434
-=======
-      ...
->>>>>>> master
       "purposes": [],
       "description": "Opt out of any tracking",
       "optOut": true
@@ -163,11 +159,7 @@ Below is sample JSON for a fictional TCF Vendor named _AdTech123_. _AdTech123_ o
   "domains": [
     ...
   ],
-<<<<<<< issue-434
-  "skds": [
-=======
   "sdks": [
->>>>>>> master
     ...
   ]
 }
