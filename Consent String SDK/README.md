@@ -28,3 +28,4 @@ These implementations are not supported by the IAB.
 - [Python](https://github.com/aabalaban/IAB-Consent-Framework/blob/master/IAB-Consent-Framework-v1.1.ipynb) (aabalaban/IAB-Consent-Framework)
 - [C](https://github.com/EulerianTechnologies/etcfv2) (EulerianTechnologies/etcfv2)
 - [Perl](https://github.com/peczenyj/GDPR-IAB-TCFv2) (GDPR::IAB::TCFv2)
+- [Lua](https://github.com/peczenyj/lua-gdpr-iab-tcfv2) (lua-gdpr-iab-tcfv2)
