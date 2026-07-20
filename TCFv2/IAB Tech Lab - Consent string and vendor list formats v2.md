@@ -66,6 +66,7 @@
 
 | Date | Version | Comments |
 | :-- | :-- | :-- |
+| May 2026 | 2.4 | Based on new policy updates: updated GVL JSON spec to include new StandardTexts field. Also removed text requiring Special Purpose–only vendors to be disclosed under the Legitimate Interest declaration.
 | Apr 2025 | 2.3 | Resolve the LI ambiguity by repurposing and making the ‘Disclosed Vendors’ section a mandatory section of the TC string.
 | Feb 2024 | 2.2 | Deprecated the gdpr_pd macro, and added the field 'environments' to the CMP JSON. |
 | May 2023 | 2.2 | Update to further strengthen the TCF as a standard in the industry: revised purpose names and descriptions, introduced retention periods for all purposes, removed legitimate interest for purposes 3 to 6, the introduction of data categories used in conjunction with the purposes, support for legitimate interest claim urls, adding support for localized policy urls and introducing a more robust vendor compliance program. |
@@ -335,6 +336,8 @@ In order to strengthen the TCF as a standard within the industry it was decided 
 ### Why was the disclosed vendor section made mandatory in TCF 2.3?<a name="mandatory_in_2_3"></a>
 
 To resolve the ambiguity regarding vendors that declare special purpose(s), we have made the <b>Disclosed Vendors</b> section mandatory. This section, previously optional, allows CMPs to explicitly declare which vendors have been disclosed to the user. By making it required, there is no longer any uncertainty about whether a vendor that only declares special purposes has been disclosed (previously a blank section left disclosure ambiguous). If a vendor declaring special purpose(s) appears in the disclosed vendors list, it means that the vendor has been presented to the user and is permitted to operate under the declared special purpose(s).
+
+For TC strings created prior to March 1, 2026, the Legitimate Interest bit was set to 1 for vendors declaring Special Purposes. This workaround was removed from the specification as of April 2026 (see _**[Core String](#the-core-string)**_ under <code>Vendor Legitimate Interest Section</code>).
 
 ## Creating a TC String
 
@@ -781,16 +784,12 @@ The _**[Core String](#the-core-string)**_ comes first and includes all the detai
         <p>
           Set the bit corresponding to a given vendor to <code>1</code> if
           the CMP has established transparency for that vendor's legitimate
-          interest disclosures for one or more Purposes (including Special Purposes).
+          interest disclosures for one or more Purposes.
         </p>
         <p>
           If a user exercises their “Right To Object” to a vendor’s
           processing based on a legitimate interest, then that vendor’s bit
-          must be set to <code>0</code>. For vendors that register for Special
-          Purposes only (no other Purposes) and have been displayed by
-          the CMP the value must be set to <code>1</code>. Note:
-          Special Purposes are displayed for transparency only and do not
-          enable user choice.
+          must be set to <code>0</code>.
         </p>
       </td>
     </tr>
@@ -1309,6 +1308,7 @@ The registration process is described here: [https://iabeurope.eu/tcf](https://i
 *   A list of Special Purposes
 *   A list of standard Features
 *   A list of Special Features
+*   A list of Standard Texts
 *   A list of Stacks
 *   A list of Categories of data collected
 *   A list of Vendors and their:
@@ -1543,6 +1543,10 @@ Here is an annotated example of the GVL’s JSON format and content. Some attrib
 
   },
 
+  "standardTexts": {
+    "features": “These means of processing can be used solely in pursuit of one or several purposes for which you are given a choice in this notice.”
+  },
+  
   "stacks": {
 	"1": {
   	   "id": 1,
